@@ -1,0 +1,225 @@
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* .wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	
+} */
+.header{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 15px;
+	background-color: rgba(18, 16, 16, 0.833);
+	z-index: 100;
+}
+[class*="__container"]{
+   width: 1500px;
+   margin: 0 auto;
+}
+[class*="_block"]{
+   width: 300px;
+   height: 35px;
+   width: 100%;
+   font-size: 25px;
+   text-align: center;
+   padding: 5px;
+}
+
+   .header__container {
+      min-width: 800px;
+      margin: 0 auto;
+   }
+   .header__menu {
+   }
+   .menu {
+      font-size: 0;
+   }
+   .menu__item {
+      position: relative;
+      display: inline-block;
+   }
+   
+   .menu__item:not(:last-child){
+      margin-right: 15px;
+   }
+   .menu__item:hover .sub-menu{
+      visibility: visible;
+      opacity: 1;
+      display: inline-block;
+      top: 100%;
+   }
+   .menu__link {
+      font-size: 16px;
+      color: burlywood;
+      padding: 5px 0px;
+   }
+   .menu__link:hover{
+      color:darksalmon;
+      text-decoration: underline;
+   }
+   .sub-menu {
+      background-color: rgb(105, 104, 107);
+      padding: 10px;
+      position: absolute;
+      min-width: 180px;
+      top: 130%;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+   }
+   .sub-menu__item:not(:last-child) {
+      margin-bottom: 10px;
+   }
+   .sub-menu__link {
+      font-size: 16px;
+      color: antiquewhite;
+      display: inline-block;
+   }
+   .sub-menu__link:hover{
+      color: aqua;
+      text-decoration: underline;
+   }
+
+   .position {
+      background: #d300ff;
+      background: linear-gradient(90deg,#d300ff 0%, #ffaf00 80%);
+      background: -webkit-linear-gradient(90deg,#d300ff 0%, #ffaf00 80%);
+      background: -moz-linear-gradient(90deg,#d300ff 0%, #ffaf00 80%);
+   }
+   .position__container {
+      width: 1500px;
+   }
+   .position__content {
+      padding-top: 45px;
+      padding-left: 20%;
+   }
+   .sticky {
+      background-color: #eee;
+      border: 3px solid red;
+      position: relative;
+      width: 400px;
+      height: 500px;
+      margin-bottom: 20px;
+   }
+   .sticky__block-1 {
+      background-color: rgb(226, 43, 43);
+      position: sticky;
+      top: 40px;
+      z-index: 90;
+   }
+   .sticky__block-2 {
+      background-color: rgb(214, 226, 43);
+
+   }
+   .sticky__block-3 {
+      background-color: rgb(54, 120, 41);
+
+   }
+   .sticky__block-4 {
+      background-color: rgb(43, 43, 226);
+
+   }
+   .sticky__block-5 {
+      background-color: rgb(214, 226, 43);
+   }
+   .sticky__block-6 {
+      background-color: rgb(54, 120, 41);
+   }
+   .position__relative {
+      margin-bottom: 20px;
+   }
+   .relative {
+      background-color: #eee;
+      border: 3px solid red;
+      width: 400px;
+      
+   }
+   .relative__block-1 {
+      background-color: rgb(43, 43, 226);
+   }
+   .relative__block-2 {
+      background-color: rgb(214, 226, 43);
+      position: relative;
+      top: 15px;
+      left: 10px;
+   }
+   .relative__block-3 {
+      background-color: rgb(54, 120, 41);
+   }
+   .position__absolute {
+      margin-bottom: 20px;
+   }
+   .absolute {
+      background-color: #eee;
+      border: 3px solid red;
+      width: 400px;
+      position: relative;
+      right: 10%;
+   }
+   .absolute__block-1 {
+      background-color: rgb(43, 43, 226);
+   }
+   .absolute__block-2 {
+      background-color: rgb(214, 226, 43);
+      position: absolute;
+      top: 15px;
+      left: 20px;
+   }
+   .absolute__block-3 {
+      background-color: rgb(54, 120, 41);
+   }
+   .position__fixed {
+      margin-bottom: 20px;
+   }
+   .fixed {
+      background-color: #eee;
+      border: 3px solid red;
+      width: 400px;
+
+   }
+   .fixed__block-1 {
+      background-color: rgb(43, 43, 226);
+   }
+   .fixed__block-2 {
+      background-color: rgb(214, 226, 43);
+ 
+   }
+   .fixed__block-3 {
+      background-color: rgb(54, 120, 41);
+      position: fixed;
+      top: 20%;
+      left: 80%;
+      width: 150px;
+      z-index: 5;
+   }
+   .home-work {
+   
+
+   }
+   .home-work__container {
+      
+   }
+   .home-work__img{
+      position: relative;
+      maxw: 100%;
+   }
+   .home-work__img img{
+      position: absolute;
+      width: 1005px;
+      top: 300px;
+      left: 200px;
+      z-index: 2;
+   }
+   .home-work__img::before {
+      content: "";
+      background: url("../img/road.jpg") 0 0 / 100% auto no-repeat;
+      display: inline-block;
+      width: 1500px;
+      height: 1000px;
+      position: relative;
+
+   }
